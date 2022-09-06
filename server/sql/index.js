@@ -6,7 +6,7 @@ const cors = require('cors')
 app.use(cors())
 app.use(express.json())
 
-const PORT = 3005;
+// const PORT = 3005;
 
 // const db = mysql.createConnection({
 //     user: 'root',
@@ -93,6 +93,9 @@ app.delete('/delete/:id', (req, res) => {
     )
 })
 
-app.listen(process.env.PORT || PORT, ()=> {
-    console.log(`port is running on port ${PORT}`)
-})
+const PORT = process.env.PORT || 3005;
+app.listen(PORT);
+
+// app.listen(process.env.PORT || PORT, ()=> {
+//     console.log(`port is running on port ${PORT}`)
+// })
