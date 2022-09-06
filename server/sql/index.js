@@ -3,7 +3,9 @@ const app = express();
 const mysql = require('mysql');
 const cors = require('cors')
 
-app.use(cors())
+app.use(cors({
+    origin: '*'
+}))
 app.use(express.json())
 
 // const PORT = 3005;
@@ -25,7 +27,6 @@ const db = mysql.createConnection({
 })
 
 
-mysql://b694552966eb5c:65e824ed@us-cdbr-east-06.cleardb.net/heroku_b19dbc561a9e46f?reconnect=true
 
 app.post('/create', (req, res) => {
     const name = req.body.name;
