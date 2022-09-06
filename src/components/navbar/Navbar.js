@@ -23,7 +23,7 @@ const Navbar = () => {
                 </li>
 
                 {/*<li className='main-nav-inline'><a href="#">Home</a></li>*/}
-                <li className='main-nav-inline'><a href="#" className='main-nav-link'>React Hooks</a>
+                <li className='main-nav-inline'><NavLink to='/hook/useState' className='main-nav-link'>React Hooks</NavLink>
                     <ul>
                         {/*<li><a href="#">HTML</a></li>*/}
                         <li><NavLink to='/hook/useState' className='main-nav-link'>useState</NavLink>
