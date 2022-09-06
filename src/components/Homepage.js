@@ -3,7 +3,7 @@ import React from 'react';
 const Homepage = () => {
     return (
         <div>
-            Helpful Tips using React.js
+            Helpful React.js practice application
         </div>
     );
 };

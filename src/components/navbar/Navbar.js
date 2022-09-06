@@ -8,7 +8,7 @@ const Navbar = () => {
     // const [toggle, setToggle] = useState(false);
 
     return (
-        <nav style={{marginBottom: '150px', backgroundColor: '#e0e0e0'}}>
+        <nav style={{marginBottom: '100px', backgroundColor: '#e0e0e0'}}>
             {/*<div className='app__navbar-logo'>*/}
             {/*    <img src={images.logo3} alt="logo"/>*/}
             {/*</div>*/}
@@ -26,7 +26,7 @@ const Navbar = () => {
                 <li className='main-nav-inline'><a href="#" className='main-nav-link'>React Hooks</a>
                     <ul>
                         {/*<li><a href="#">HTML</a></li>*/}
-                        <li><a href="#" className='main-nav-link'>useState</a>
+                        <li><NavLink to='/hook/useState' className='main-nav-link'>useState</NavLink>
                             <ul>
                                 <li>
                                     <NavLink to='/hook/useState' className='main-nav-link'>useState Counter</NavLink>
@@ -37,15 +37,47 @@ const Navbar = () => {
                             </ul>
                         </li>
 
-                        <li><a href="#" className='main-nav-link'>useReducer</a>
-                            <ul>
-                                <li>
-                                    <NavLink to='/hook/useReducer' className='main-nav-link'>useReducer</NavLink>
-                                </li>
-                                {/*<li>*/}
-                                {/*    <NavLink to='/hook/useState2' className='main-nav-link'>useState Example 2</NavLink>*/}
-                                {/*</li>*/}
-                            </ul>
+                        <li><NavLink to='/hook/useReducer' className='main-nav-link'>useReducer</NavLink>
+                            {/*<ul>*/}
+                            {/*    <li>*/}
+                            {/*        <NavLink to='/hook/useReducer' className='main-nav-link'>useReducer</NavLink>*/}
+                            {/*    </li>*/}
+                            {/*</ul>*/}
+                        </li>
+                        <li><NavLink to='/hook/useEffect' className='main-nav-link'>useEffect</NavLink>
+                            {/*<ul>*/}
+                            {/*    <li>*/}
+                            {/*        <NavLink to='/hook/useEffect' className='main-nav-link'>useEffect</NavLink>*/}
+                            {/*    </li>*/}
+                            {/*</ul>*/}
+                        </li>
+                        <li><NavLink to='/hook/useRef' className='main-nav-link'>useRef</NavLink>
+                            {/*<ul>*/}
+                            {/*    <li>*/}
+                            {/*        <NavLink to='/hook/useRef' className='main-nav-link'>useRef</NavLink>*/}
+                            {/*    </li>*/}
+                            {/*</ul>*/}
+                        </li>
+                        <li><NavLink to='/hook/useLayoutEffect' className='main-nav-link'>useLayoutEffect</NavLink>
+                            {/*<ul>*/}
+                            {/*    <li>*/}
+                            {/*        <NavLink to='/hook/useRef' className='main-nav-link'>useRef</NavLink>*/}
+                            {/*    </li>*/}
+                            {/*</ul>*/}
+                        </li>
+                        <li><NavLink to='/hook/useImperativeHandle' className='main-nav-link'>useImperativeHandle</NavLink>
+                            {/*<ul>*/}
+                            {/*    <li>*/}
+                            {/*        <NavLink to='/hook/useRef' className='main-nav-link'>useRef</NavLink>*/}
+                            {/*    </li>*/}
+                            {/*</ul>*/}
+                        </li>
+                        <li><NavLink to='/hook/useContext' className='main-nav-link'>useContext</NavLink>
+                            {/*<ul>*/}
+                            {/*    <li>*/}
+                            {/*        <NavLink to='/hook/useRef' className='main-nav-link'>useRef</NavLink>*/}
+                            {/*    </li>*/}
+                            {/*</ul>*/}
                         </li>
                         {/*<li><a href="#">JavaScript</a>*/}
                         {/*    <ul>*/}
@@ -55,20 +87,8 @@ const Navbar = () => {
                         {/*</li>*/}
                     </ul>
                 </li>
-                {/*<li className='main-nav-inline'><a href="#">WordPress Development</a>*/}
-                {/*    <ul>*/}
-                {/*        <li><a href="#">Themes</a></li>*/}
-                {/*        <li><a href="#">Plugins</a></li>*/}
-                {/*        <li><a href="#">Custom Post Types</a>*/}
-                {/*            <ul>*/}
-                {/*                <li><a href="#">Portfolios</a></li>*/}
-                {/*                <li><a href="#">Testimonials</a></li>*/}
-                {/*            </ul>*/}
-                {/*        </li>*/}
-                {/*        <li><a href="#">Options</a></li>*/}
-                {/*    </ul>*/}
-                {/*</li>*/}
-                {/*<li className='main-nav-inline'><a href="#">About Us</a></li>*/}
+                <li className='main-nav-inline'><NavLink to='/sql' className='main-nav-link'>React SQL</NavLink>
+                </li>
             </ul>
             </div>
 

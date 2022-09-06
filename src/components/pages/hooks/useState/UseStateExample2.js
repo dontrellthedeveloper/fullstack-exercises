@@ -9,7 +9,7 @@ const UseStateExample = () => {
     }
 
     return (
-        <>
+        <div>
             <div className='heading-text-lg'>
                 <input placeholder='enter something...' onChange={onChange}/>
             </div>
@@ -17,7 +17,7 @@ const UseStateExample = () => {
                 {inputValue}
             </div>
 
-        </>
+        </div>
     );
 };
 
