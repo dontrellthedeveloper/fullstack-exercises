@@ -87,7 +87,30 @@ const Navbar = () => {
                         {/*</li>*/}
                     </ul>
                 </li>
-                <li className='main-nav-inline'><NavLink to='/sql' className='main-nav-link'>React SQL</NavLink>
+                {/*<li className='main-nav-inline'><NavLink to='/sql' className='main-nav-link'>React SQL</NavLink>*/}
+                {/*</li>*/}
+                <li className='main-nav-inline'><NavLink to='/sql' className='main-nav-link'>Databases</NavLink>
+                    <ul>
+                        {/*<li><a href="#">HTML</a></li>*/}
+                        <li><NavLink to='/sql' className='main-nav-link'>SQL</NavLink>
+                            <ul>
+                                <li>
+                                    <NavLink to='/sql' className='main-nav-link'>Add Employee to SQL DB</NavLink>
+                                </li>
+                                {/*<li>*/}
+                                {/*    <NavLink to='/hook/useState2' className='main-nav-link'>useState Input</NavLink>*/}
+                                {/*</li>*/}
+                            </ul>
+                        </li>
+
+                        <li><NavLink to='/hook/useReducer' className='main-nav-link'>MongoDB</NavLink>
+                            {/*<ul>*/}
+                            {/*    <li>*/}
+                            {/*        <NavLink to='/hook/useReducer' className='main-nav-link'>useReducer</NavLink>*/}
+                            {/*    </li>*/}
+                            {/*</ul>*/}
+                        </li>
+                    </ul>
                 </li>
             </ul>
             </div>

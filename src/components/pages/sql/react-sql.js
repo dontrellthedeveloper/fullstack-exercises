@@ -15,7 +15,7 @@ const ReactSql = () => {
     const [employeeList, setEmployeeList] = useState([])
 
     const addEmployee = () => {
-        Axios.post('http://localhost:3005/create', {
+        Axios.post('https://react-mysql-app-employee.herokuapp.com/create', {
             name: name,
             age: age,
             country: country,
@@ -34,13 +34,13 @@ const ReactSql = () => {
     }
 
     const getEmployees = () => {
-        Axios.get('http://localhost:3005/employees').then((res) => {
+        Axios.get('https://react-mysql-app-employee.herokuapp.com/employees').then((res) => {
             setEmployeeList(res.data)
         })
     }
 
     const updateEmployeeWage = (id) => {
-        Axios.put('http://localhost:3005/update', {
+        Axios.put('https://react-mysql-app-employee.herokuapp.com/update', {
             wage: newWage,
             id: id
         }).then((res) => {
@@ -52,7 +52,7 @@ const ReactSql = () => {
 
 
     const deleteEmployee = (id) => {
-        Axios.delete(`http://localhost:3005/delete/${id}`).then((res) => {
+        Axios.delete(`https://react-mysql-app-employee.herokuapp.com/delete/${id}`).then((res) => {
             setEmployeeList(employeeList.filter((val) => {
                 return val.id != id
             }))

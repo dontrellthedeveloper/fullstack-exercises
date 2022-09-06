@@ -6,13 +6,26 @@ const cors = require('cors')
 app.use(cors())
 app.use(express.json())
 
+const PORT = 3005;
+
+// const db = mysql.createConnection({
+//     user: 'root',
+//     host: 'localhost',
+//     password: 'KNight1990$',
+//     // password: process.env.SQL_SERVER_DB_PASSWORD,
+//     database: 'employeeSystem'
+// })
+
 const db = mysql.createConnection({
-    user: 'root',
-    host: 'localhost',
-    password: 'KNight1990$',
+    user: 'b694552966eb5c',
+    host: 'us-cdbr-east-06.cleardb.net',
+    password: '65e824ed',
     // password: process.env.SQL_SERVER_DB_PASSWORD,
-    database: 'employeeSystem'
+    database: 'heroku_b19dbc561a9e46f'
 })
+
+
+mysql://b694552966eb5c:65e824ed@us-cdbr-east-06.cleardb.net/heroku_b19dbc561a9e46f?reconnect=true
 
 app.post('/create', (req, res) => {
     const name = req.body.name;
@@ -80,6 +93,6 @@ app.delete('/delete/:id', (req, res) => {
     )
 })
 
-app.listen(3005, ()=> {
-    console.log("port is running on port 3005")
+app.listen(process.env.PORT || PORT, ()=> {
+    console.log(`port is running on port ${PORT}`)
 })
